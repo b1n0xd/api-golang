@@ -34,13 +34,5 @@ func getUsers(w http.ResponseWriter, r *http.Request) {
 			ID:   2,
 			Name: "Luciano",
 		},
-		{
-			ID:   3,
-			Name: "Vieira",
-		},
-		{
-			ID:   4,
-			Name: "Showtime",
-		},
 	})
 }
