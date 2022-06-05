@@ -28,3 +28,4 @@ Criar API Rest com a linguagem Go(golang) utilizando os pacotes http e mux(goril
 **Packages:** http, mux
 
 
+<a href="https://wakatime.com/badge/github/lucvieirasi/api-golang"><img src="https://wakatime.com/badge/github/lucvieirasi/api-golang.svg" alt="wakatime"></a>
