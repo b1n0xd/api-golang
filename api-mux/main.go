@@ -9,12 +9,13 @@ import (
 )
 
 func main() {
-	mux.Router := mux.NewRouter()
-	mux.Router.HandleFunc("/users", getUsers).Methods("GET")
+	muxRouter := mux.NewRouter()
+	muxRouter.HandleFunc("/users", getUsers).Methods("GET")
 	fmt.Println("API online in port:8080")
-	log.Fatal(http.ListenAndServe(":8080", mux.Router))
+	log.Fatal(http.ListenAndServe(":8080", muxRouter))
 
 }
+
 type User struct {
 	ID   int    `json:"id"`
 	Name string `json:"name"`
@@ -31,14 +32,5 @@ func getUsers(w http.ResponseWriter, r *http.Request) {
 			ID:   2,
 			Name: "Luciano",
 		},
-		{
-			ID:   3,
-			Name: "Vieira",
-		},
-		{
-			ID:   4,
-			Name: "Showtime",
-		},
 	})
 }
-
